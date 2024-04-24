@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  postgres-server:
+    container_name: postgres
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: randy
+      POSTGRES_DB: testdb
